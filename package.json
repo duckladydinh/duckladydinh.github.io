@@ -7,12 +7,15 @@
   "author": "Lam Gia Thuan",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf dist",
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "rm -rf dist && parcel build index.html --public-url ./",
+    "publish-to-github": "babel-node --presets es2015 publish-to-github.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "cssnano": "^4.1.10",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0"
   },
   "dependencies": {
