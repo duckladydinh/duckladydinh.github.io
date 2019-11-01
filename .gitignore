@@ -1,3 +1,14 @@
 .idea/
+
+.cache/
+
+dist/
+
+node_modules/
+
+yarn.lock
+
+yarn-error.log
+
 # Default ignored files
 /workspace.xml

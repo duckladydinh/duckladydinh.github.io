@@ -1,0 +1,21 @@
+{
+  "name": "duckladydinh.github.io",
+  "version": "1.0.0",
+  "description": "A personal website created for LMU Elite Data Science program application",
+  "main": "script/index.js",
+  "repository": "https://github.com/duckladydinh/duckladydinh.github.io.git",
+  "author": "Lam Gia Thuan",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "style": "^0.0.3"
+  }
+}
