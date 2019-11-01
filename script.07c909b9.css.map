@@ -1,0 +1,1 @@
+{"version":3,"sources":["style/scss/default.scss"],"names":[],"mappings":"AAAA,WACE,sCAAwC","file":"script.07c909b9.css","sourceRoot":"..","sourcesContent":[".jumbotron {\n  background-color: transparent !important;\n}\n"]}
