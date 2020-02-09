@@ -1,0 +1,10 @@
+/* styles for '...' */
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  //noinspection CssUnknownProperty
+  -webkit-line-clamp: 4;
+}
