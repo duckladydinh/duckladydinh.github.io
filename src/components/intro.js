@@ -1,16 +1,20 @@
 import React from 'react';
 
+const RESUME_PATH = '/Lam_Gia_Thuan_CV.pdf';
+
 export const Intro = () => {
     return (
         <section className="hero is-danger is-medium">
             <div className="hero-head">
                 <nav className="navbar">
                     <div className="container">
-                        <div className="navbar-menu">
+                        <div className="navbar-menu is-active">
                             <div className="navbar-end">
                                 <a className="navbar-item is-active">Home</a>
-                                <a className="navbar-item">Resume</a>
                                 <a className="navbar-item">Contact</a>
+                                <a className="navbar-item" href={RESUME_PATH}>
+                                    Resume
+                                </a>
                             </div>
                         </div>
                     </div>

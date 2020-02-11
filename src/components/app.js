@@ -3,7 +3,7 @@ import 'bulma/css/bulma.css';
 import React from 'react';
 import { render } from 'react-dom';
 import { Intro } from './intro';
-import {PostCard} from "./post-card";
+import { PostCard } from './post-card';
 
 const App = () => {
     return (
