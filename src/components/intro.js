@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RESUME_PATH = '/Lam_Gia_Thuan_CV.pdf';
+const RESUME_PATH = 'Lam_Gia_Thuan_CV.pdf';
 
 export const Intro = () => {
     return (
