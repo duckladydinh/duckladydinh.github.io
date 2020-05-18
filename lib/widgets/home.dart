@@ -27,20 +27,23 @@ class Home extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            IdiomBoard(
-              idioms: appDataProvider.getIdioms(),
-              maxWidth: MediaQuery.of(context).size.width,
-              maxHeight: MediaQuery.of(context).size.height * 0.85,
-            ),
-            EventBoard(
-              events: List.from(appDataProvider.getEvents().reversed),
-              maxWidth: MediaQuery.of(context).size.width,
-              minWidth: 400,
-              estimatedHeight: 250,
-            ),
-          ],
+        child: InkWell(
+          onTap: () {},
+          child: Column(
+            children: [
+              IdiomBoard(
+                idioms: appDataProvider.getIdioms(),
+                maxWidth: MediaQuery.of(context).size.width,
+                maxHeight: MediaQuery.of(context).size.height * 0.85,
+              ),
+              EventBoard(
+                events: List.from(appDataProvider.getEvents().reversed),
+                maxWidth: MediaQuery.of(context).size.width,
+                minWidth: 400,
+                estimatedHeight: 250,
+              ),
+            ],
+          ),
         ),
       ),
     );
