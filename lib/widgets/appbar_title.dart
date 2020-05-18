@@ -1,4 +1,4 @@
-import 'package:duckladydinh/theme_mode_provider.dart';
+import 'package:duckladydinh/api/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

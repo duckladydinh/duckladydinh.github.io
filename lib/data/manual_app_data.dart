@@ -1,4 +1,4 @@
-import 'package:duckladydinh/api/app_data.dart';
+import 'package:duckladydinh/api/models.dart';
 
 class ManualAppData extends AppData {
   @override

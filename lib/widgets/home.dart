@@ -1,4 +1,4 @@
-import 'package:duckladydinh/api/app_data.dart';
+import 'package:duckladydinh/api/models.dart';
 import 'package:duckladydinh/widgets/appbar_title.dart';
 import 'package:duckladydinh/widgets/event_board.dart';
 import 'package:duckladydinh/widgets/idiom_board.dart';
