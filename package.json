@@ -1,0 +1,16 @@
+{
+  "name": "duckladydinh",
+  "version": "1.0.0",
+  "main": "publish-to-github.js",
+  "repository": "https://gitlab.com/duckladydinh/duckladydinh.git",
+  "author": "Gia Thuan Lam <duckladydinh@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "publish-to-github": "babel-node publish-to-github.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "gh-pages": "^2.2.0"
+  }
+}
