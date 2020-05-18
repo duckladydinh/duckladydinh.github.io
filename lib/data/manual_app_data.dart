@@ -120,4 +120,9 @@ class ManualAppData extends AppData {
   List<Event> getEvents() {
     return _events;
   }
+
+  @override
+  String getResumeLocation() {
+    return "/assets/static/Lam_Gia_Thuan_CV_3_0.pdf";
+  }
 }

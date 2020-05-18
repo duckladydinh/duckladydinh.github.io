@@ -10,6 +10,8 @@ abstract class AppData {
   List<Idiom> getIdioms();
 
   List<Event> getEvents();
+
+  String getResumeLocation();
 }
 
 class Idiom {

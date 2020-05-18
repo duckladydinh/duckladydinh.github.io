@@ -9,7 +9,7 @@ class IdiomBoard extends StatefulWidget {
   final List<Idiom> idioms;
 
   IdiomBoard({this.idioms, double maxWidth, double maxHeight})
-      : boardRatio = maxWidth / (maxHeight - 50);
+      : boardRatio = maxWidth / maxHeight;
 
   @override
   _IdiomBoardState createState() {

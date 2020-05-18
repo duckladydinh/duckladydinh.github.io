@@ -1,5 +1,6 @@
 import 'package:duckladydinh/api/app_data.dart';
-import 'package:duckladydinh/gen/manual_app_data.dart';
+import 'package:duckladydinh/data/manual_app_data.dart';
+import 'package:duckladydinh/theme_mode_provider.dart';
 import 'package:duckladydinh/widgets/home.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -32,20 +33,5 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Home(),
     );
-  }
-}
-
-class ThemeModeProvider with ChangeNotifier {
-  ThemeMode _themeMode;
-
-  ThemeModeProvider(this._themeMode);
-
-  ThemeMode getTheme() {
-    return _themeMode;
-  }
-
-  void setTheme(ThemeMode themeMode) {
-    _themeMode = themeMode;
-    notifyListeners();
   }
 }
