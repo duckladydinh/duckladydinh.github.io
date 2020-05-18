@@ -18,6 +18,7 @@ class EventBoard extends StatelessWidget {
 
     return GridView.count(
       childAspectRatio: estimatedColWidth / this.estimatedHeight,
+      physics: ScrollPhysics(),
       crossAxisCount: cols,
       shrinkWrap: true,
       children: [
