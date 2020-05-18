@@ -24,7 +24,7 @@ class Idiom {
 
 class Event {
   final Key key;
-  final String date;
+  final DateTime date;
   final String summary;
   final String story;
 
