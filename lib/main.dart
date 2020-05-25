@@ -1,4 +1,3 @@
-import 'package:duckladydinh/api/models.dart';
 import 'package:duckladydinh/api/providers.dart';
 import 'package:duckladydinh/data/manual_app_data.dart';
 import 'package:duckladydinh/widgets/home.dart';
@@ -6,15 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  final AppData appData = ManualAppData();
-
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(
         create: (context) => ThemeModeProvider(ThemeMode.dark),
       ),
       Provider(
-        create: (context) => appData,
+        create: (context) {
+          DataProvider dataProvider = ManualDataProvider();
+          return dataProvider;
+        },
       ),
     ],
     child: App(),

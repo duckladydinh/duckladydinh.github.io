@@ -1,4 +1,4 @@
-import 'package:duckladydinh/api/models.dart';
+import 'package:duckladydinh/api/providers.dart';
 import 'package:duckladydinh/widgets/appbar_title.dart';
 import 'package:duckladydinh/widgets/event_board.dart';
 import 'package:duckladydinh/widgets/idiom_board.dart';
@@ -8,7 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
-    final appDataProvider = Provider.of<AppData>(context);
+    final appDataProvider = Provider.of<DataProvider>(context);
 
     return Scaffold(
       appBar: AppBar(

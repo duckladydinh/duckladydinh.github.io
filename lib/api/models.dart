@@ -1,19 +1,5 @@
 import 'package:flutter/material.dart';
 
-abstract class AppData {
-  String getAuthor();
-
-  String getAuthorDayTitle();
-
-  String getAuthorNightTitle();
-
-  List<Idiom> getIdioms();
-
-  List<Event> getEvents();
-
-  String getResumeLocation();
-}
-
 class Idiom {
   final Key key;
   final String author;

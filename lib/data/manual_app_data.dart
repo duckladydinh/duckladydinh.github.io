@@ -1,6 +1,7 @@
 import 'package:duckladydinh/api/models.dart';
+import 'package:duckladydinh/api/providers.dart';
 
-class ManualAppData extends AppData {
+class ManualDataProvider extends DataProvider {
   @override
   String getAuthor() {
     return "Gia Thuan Lam";
@@ -28,7 +29,7 @@ class ManualAppData extends AppData {
 
   @override
   String getResumeLocation() {
-    return "/assets/static/Lam_Gia_Thuan_CV_3_0.pdf";
+    return "/assets/static/Lam_Gia_Thuan_CV_4_0.pdf";
   }
 }
 
@@ -67,7 +68,8 @@ final events = [
   ),
   Event(
     date: DateTime(2020, 2, 9),
-    summary: "I thought of making a cute blog and tried my hands on React.",
+    summary:
+        "I thought of a personal website and tried my hands on React + Bulma.",
     story: null,
   ),
   Event(
@@ -87,16 +89,6 @@ final events = [
     story: null,
   ),
   Event(
-    date: DateTime(2020, 4, 11),
-    summary: "I played with Flutter for the first time.",
-    story: null,
-  ),
-  Event(
-    date: DateTime(2020, 4, 13),
-    summary: "I learnt about gRPC for the first time.",
-    story: null,
-  ),
-  Event(
     date: DateTime(2020, 4, 24),
     summary:
         "I learned of the situation of Google and Corona. Worry, I do, but still with hope!",
@@ -105,7 +97,7 @@ final events = [
   Event(
     date: DateTime(2020, 4, 26),
     summary:
-        "I finally understood the basics of Go, Flutter and gRPC. They are awesome together.",
+        "I learned the basics of Go, Flutter and gRPC. They are awesome together.",
     story: null,
   ),
   Event(
@@ -114,20 +106,15 @@ final events = [
     story: null,
   ),
   Event(
-    date: DateTime(2020, 5, 15),
-    summary: "I managed to record the presentation for EANN 2020.",
+    date: DateTime(2020, 5, 16),
+    summary:
+        "I finally figured out the idea behind my personal website: A Philosophy Blog of Universal Facts!",
     story: null,
   ),
   Event(
     date: DateTime(2020, 5, 16),
     summary:
-        "I finally figured out an idea for my personal blog: A Philosophy Blog of Universal Facts!",
-    story: null,
-  ),
-  Event(
-    date: DateTime(2020, 5, 16),
-    summary:
-        "I ranked 1800 at CodeJam 2020. Still faraway from what I desire, but still a solid 10% improvement!",
+        "I ranked 1796 at CodeJam 2020. Still faraway from what I desire, but still a solid 10% improvement!",
     story: null,
   ),
   Event(
@@ -139,7 +126,7 @@ final events = [
   Event(
     date: DateTime(2020, 5, 18),
     summary:
-        "My first personal blog with Google's stunning Flutter is official released.",
+        "My first personal website with Google's stunning Flutter is official released.",
     story: null,
   ),
 ];
