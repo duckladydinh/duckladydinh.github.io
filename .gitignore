@@ -2,6 +2,7 @@
 public
 .firebase
 .firebaserc
+firebase.json
 
 # gh-pages
 node_modules
