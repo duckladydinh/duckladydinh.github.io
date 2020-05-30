@@ -56,12 +56,12 @@ final idioms = [
   Idiom(
     author: "Whis, The Angel",
     quote:
-    "Ghost or not, there's nothing that Beerus sama can't destroy... oh, except for the absolute divine beauty of Thuan, of course",
+        "Ghost or not, there's nothing that Beerus sama can't destroy... oh, except for the absolute divine beauty of Thuan, of course",
   ),
   Idiom(
     author: "The Book",
     quote:
-    "If it's possible for others, it's possible for me. It is only a question of strategies!",
+        "If it's possible for others, it's possible for me. It is only a question of strategies!",
   ),
 ];
 
