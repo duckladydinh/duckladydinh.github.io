@@ -6,7 +6,7 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/LICENSE": "97e5b7c95304b283a477b87ca2373966",
 "assets/AssetManifest.json": "884fad55829170796f7c43a61ac09be4",
-"assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "1a729bb4898ba663bb02f9675eb24946",
+"assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "255a9b7d1e7246e454643e1c8c64a000",
 "assets/FontManifest.json": "580ff1a5d08679ded8fcf5c6848cece7",
 "index.html": "8b483ba217ee49b79f3834bc3b2739d6",
 "/": "8b483ba217ee49b79f3834bc3b2739d6",
