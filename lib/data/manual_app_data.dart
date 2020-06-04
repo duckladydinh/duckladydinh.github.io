@@ -137,7 +137,7 @@ final events = [
   Event(
     date: DateTime(2020, 6, 4),
     summary:
-        "Today, for the first time, I checked out what beneath the JVM: absolute beauty",
+        "Today, for the first time, I checked out what beneath the JVM: absolute beauty.",
     story: null,
   ),
 ];
