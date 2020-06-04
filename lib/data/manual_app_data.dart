@@ -134,4 +134,10 @@ final events = [
         "My first personal website with Google's stunning Flutter is officially released.",
     story: null,
   ),
+  Event(
+    date: DateTime(2020, 6, 4),
+    summary:
+        "Today, for the first time, I checked out what beneath the JVM: absolute beauty",
+    story: null,
+  ),
 ];
