@@ -140,4 +140,10 @@ final events = [
         "Today, for the first time, I checked out what beneath the JVM: absolute beauty.",
     story: null,
   ),
+  Event(
+    date: DateTime(2020, 6, 5),
+    summary:
+        "Fun experiement! A little bird told me my English was too broken. Today, I recodered myself singing in English and Vietnamese and surprisingly, both are equally broken to the point that I can feel the struggle in pronouncing every word.",
+    story: null,
+  ),
 ];
