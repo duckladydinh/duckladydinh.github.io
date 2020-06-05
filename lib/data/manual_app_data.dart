@@ -162,7 +162,7 @@ final events = [
   Event(
     date: DateTime(2020, 6, 5),
     summary:
-        "Fun experiment! A little bird told me my English was too broken. Today, I recodered myself singing in English and Vietnamese and surprisingly, both are equally broken to the point that I can feel the struggle in pronouncing every word.",
+        "Fun experiment! A little bird told me my English was too broken. Today, I recorded myself singing in English and Vietnamese and surprisingly, both are equally broken to the point that I can feel the struggle in pronouncing every word.",
     story: null,
   ),
 ];
