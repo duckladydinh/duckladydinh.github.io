@@ -67,6 +67,23 @@ final idioms = [
 
 final events = [
   Event(
+    date: DateTime(2016, 9, 5),
+    summary: "I came to Germany!",
+    story: null,
+  ),
+  Event(
+    date: DateTime(2017, 1, 29),
+    summary:
+        "FAU Winter Contest, runner-up at TUM, my first glory ever at university!",
+    story: null,
+  ),
+  Event(
+    date: DateTime(2019, 4, 17),
+    summary:
+        "For the first time in many years, I finally made my way through Code Jam Round 1! (Rank 902 Round 1A)",
+    story: null,
+  ),
+  Event(
     date: DateTime(2020, 2, 5),
     summary: "I graduated! Eureka!",
     story: null,
@@ -143,7 +160,7 @@ final events = [
   Event(
     date: DateTime(2020, 6, 5),
     summary:
-        "Fun experiement! A little bird told me my English was too broken. Today, I recodered myself singing in English and Vietnamese and surprisingly, both are equally broken to the point that I can feel the struggle in pronouncing every word.",
+        "Fun experiment! A little bird told me my English was too broken. Today, I recodered myself singing in English and Vietnamese and surprisingly, both are equally broken to the point that I can feel the struggle in pronouncing every word.",
     story: null,
   ),
 ];

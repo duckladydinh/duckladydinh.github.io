@@ -44,7 +44,7 @@ class _IdiomBoardState extends State<IdiomBoard> {
           autoPlay: true,
           enlargeCenterPage: true,
           scrollPhysics: ScrollPhysics(),
-          autoPlayInterval: const Duration(seconds: 10),
+          autoPlayInterval: const Duration(seconds: 8),
           aspectRatio: widget.boardRatio,
         ),
         carouselController: _carouselController,
