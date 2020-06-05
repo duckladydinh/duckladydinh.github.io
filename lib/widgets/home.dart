@@ -38,9 +38,7 @@ class Home extends StatelessWidget {
               ),
               EventBoard(
                 events: List.from(appDataProvider.getEvents().reversed),
-                maxWidth: MediaQuery.of(context).size.width,
-                minWidth: 400,
-                estimatedHeight: 250,
+                boardWidth: MediaQuery.of(context).size.width,
               ),
             ],
           ),

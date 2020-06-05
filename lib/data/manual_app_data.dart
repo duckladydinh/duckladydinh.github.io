@@ -19,12 +19,14 @@ class ManualDataProvider extends DataProvider {
 
   @override
   List<Idiom> getIdioms() {
-    return idioms;
+    return List.unmodifiable(idioms);
   }
 
   @override
   List<Event> getEvents() {
-    return events;
+    final copy = List.from(events);
+    copy.sort((a, b) => a.date.compareTo(b.date));
+    return List.unmodifiable(copy);
   }
 
   @override
