@@ -25,7 +25,7 @@ class ManualDataProvider extends DataProvider {
   @override
   List<Event> getEvents() {
     final copy = List.from(events);
-    copy.sort((a, b) => a.date.compareTo(b.date));
+    copy.sort((a, b) => b.date.compareTo(a.date));
     return List.unmodifiable(copy);
   }
 
