@@ -9,8 +9,6 @@ import 'package:url_launcher/url_launcher.dart';
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     final appDataProvider = Provider.of<DataProvider>(context);
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
     final events = appDataProvider.getEvents();
     final idioms = appDataProvider.getIdioms();
 
@@ -35,12 +33,12 @@ class Home extends StatelessWidget {
           children: [
             IdiomBoard(
               idioms: idioms,
-              maxWidth: screenWidth,
-              maxHeight: screenHeight * 0.8,
+              maxWidth: MediaQuery.of(context).size.width,
+              maxHeight: MediaQuery.of(context).size.height * 0.8,
             ),
             EventBoard(
               events: events,
-              boardWidth: screenWidth,
+              boardWidth: MediaQuery.of(context).size.width,
             ),
           ],
         ),
