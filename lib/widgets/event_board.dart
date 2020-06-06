@@ -45,7 +45,8 @@ class EventBoard extends StatelessWidget {
                     children: [
                       for (var event in e.value)
                         Padding(
-                          padding: EdgeInsets.all(this.columnSpace),
+                          padding: EdgeInsets.all(
+                              (cols > 1 ? this.columnSpace : 0.0)),
                           child: EventCard(event),
                         )
                     ],
