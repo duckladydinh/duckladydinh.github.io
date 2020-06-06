@@ -41,10 +41,11 @@ class _IdiomBoardState extends State<IdiomBoard> {
       },
       child: CarouselSlider(
         options: CarouselOptions(
-          autoPlay: true,
-          enlargeCenterPage: true,
           autoPlayInterval: const Duration(seconds: 8),
           aspectRatio: widget.boardRatio,
+          scrollPhysics: ScrollPhysics(),
+          enlargeCenterPage: true,
+          autoPlay: true,
         ),
         carouselController: _carouselController,
         items: [

@@ -40,9 +40,10 @@ class EventBoard extends StatelessWidget {
             .expand((e) => [
                   AnnotatedDivider(e.key.toString()),
                   GridView.count(
-                    mainAxisSpacing: colSpace,
-                    crossAxisSpacing: colSpace,
                     childAspectRatio: aspectRatio,
+                    crossAxisSpacing: colSpace,
+                    mainAxisSpacing: colSpace,
+                    physics: ScrollPhysics(),
                     crossAxisCount: cols,
                     shrinkWrap: true,
                     children: [for (var event in e.value) EventCard(event)],
