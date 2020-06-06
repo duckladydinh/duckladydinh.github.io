@@ -14,11 +14,11 @@ class AnnotatedDivider extends StatelessWidget {
       children: [
         Expanded(
           child: Divider(
-            thickness: this.thickness,
+            thickness: thickness,
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(this.textPadding),
+          padding: EdgeInsets.all(textPadding),
           child: Text(
             this.text,
             style: Theme.of(context).textTheme.headline4,
@@ -26,7 +26,7 @@ class AnnotatedDivider extends StatelessWidget {
         ),
         Expanded(
           child: Divider(
-            thickness: this.thickness,
+            thickness: thickness,
           ),
         ),
       ],
