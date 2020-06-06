@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
           authorDayTitle: appDataProvider.getAuthorDayTitle(),
           authorNightTitle: appDataProvider.getAuthorNightTitle(),
         ),
-        actions: <Widget>[
+        actions: [
           IconButton(
             icon: Icon(Icons.account_circle),
             onPressed: () async {

@@ -54,7 +54,7 @@ class _IdiomBoardState extends State<IdiomBoard> {
               padding: EdgeInsets.symmetric(horizontal: 50.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
+                children: [
                   Text(
                     idiom.quote,
                     style: Theme.of(context).textTheme.headline4,
