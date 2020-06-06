@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
             IdiomBoard(
               idioms: appDataProvider.getIdioms(),
               maxWidth: MediaQuery.of(context).size.width,
-              maxHeight: MediaQuery.of(context).size.height * 0.85,
+              maxHeight: MediaQuery.of(context).size.height * 0.8,
             ),
             EventBoard(
               events: List.from(appDataProvider.getEvents().reversed),

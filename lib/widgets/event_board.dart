@@ -26,30 +26,26 @@ class EventBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cols = min(maxCols, max(1, (boardWidth / cellWidth).floor()));
-    final totalWidth = (this.columnSpace * 2 + cellWidth) * cols;
     final eventMap = groupedEventsByYear(events);
     final aspectRatio = getAspectRatio(cols);
+    final colSpace = (cols > 1 ? columnSpace : 0);
+    final totalWidth = colSpace * (cols - 1) + cellWidth * cols;
 
     return Padding(
       padding: EdgeInsets.symmetric(
           horizontal: max(0, (boardWidth - totalWidth) / 2.0)),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: eventMap.entries
             .expand((e) => [
                   AnnotatedDivider(e.key.toString()),
                   GridView.count(
+                    mainAxisSpacing: colSpace,
+                    crossAxisSpacing: colSpace,
                     childAspectRatio: aspectRatio,
-                    physics: ScrollPhysics(),
                     crossAxisCount: cols,
                     shrinkWrap: true,
-                    children: [
-                      for (var event in e.value)
-                        Padding(
-                          padding: EdgeInsets.all(
-                              (cols > 1 ? this.columnSpace : 0.0)),
-                          child: EventCard(event),
-                        )
-                    ],
+                    children: [for (var event in e.value) EventCard(event)],
                   ),
                 ])
             .toList(),
@@ -71,6 +67,6 @@ class EventBoard extends StatelessWidget {
   }
 
   double getAspectRatio(int cols) {
-    return cellWidth / cellHeight;
+    return min(boardWidth, cellWidth) / cellHeight;
   }
 }
