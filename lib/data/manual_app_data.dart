@@ -165,4 +165,9 @@ final events = [
         "Fun experiment! A little bird told me my English was too broken. Today, I recorded myself singing in English and Vietnamese and surprisingly, both are equally broken to the point that I can feel the struggle in pronouncing every word.",
     story: null,
   ),
+  Event(
+    date: DateTime(2020, 6, 5),
+    summary: "Light in the cloudy sky! =)) GooGooGooGoo...Google!",
+    story: null,
+  ),
 ];
