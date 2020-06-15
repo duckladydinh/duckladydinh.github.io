@@ -21,6 +21,7 @@ class _AppBarTitleState extends State<AppBarTitle> {
   @override
   Widget build(BuildContext context) {
     final themeModeProvider = Provider.of<ThemeModeProvider>(context);
+    final appDataProvider = Provider.of<DataProvider>(context);
 
     return Row(
       children: [
@@ -31,6 +32,8 @@ class _AppBarTitleState extends State<AppBarTitle> {
         ),
         Switch(
           value: isLightMode,
+          inactiveThumbImage: AssetImage(appDataProvider.getMoonIconLocation()),
+          activeThumbImage: AssetImage(appDataProvider.getSunIconLocation()),
           onChanged: (value) {
             setState(() {
               isLightMode = value;

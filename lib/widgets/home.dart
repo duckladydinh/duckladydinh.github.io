@@ -24,6 +24,7 @@ class Home extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(Icons.account_circle),
+            tooltip: "Resume",
             onPressed: () async {
               await launch(appDataProvider.getResumeLocation());
             },

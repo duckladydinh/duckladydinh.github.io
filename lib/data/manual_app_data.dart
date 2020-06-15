@@ -2,6 +2,17 @@ import 'package:duckladydinh/api/models.dart';
 import 'package:duckladydinh/api/providers.dart';
 
 class ManualDataProvider extends DataProvider {
+  List<Idiom> _idioms;
+  List<Event> _events;
+
+  ManualDataProvider() {
+    _idioms = List.unmodifiable(idioms);
+
+    _events = List.from(events);
+    _events.sort((a, b) => b.date.compareTo(a.date));
+    _events = List.unmodifiable(_events);
+  }
+
   @override
   String getAuthor() {
     return "Gia Thuan Lam";
@@ -19,19 +30,27 @@ class ManualDataProvider extends DataProvider {
 
   @override
   List<Idiom> getIdioms() {
-    return List.unmodifiable(idioms);
+    return _idioms;
   }
 
   @override
   List<Event> getEvents() {
-    final copy = List.from(events);
-    copy.sort((a, b) => b.date.compareTo(a.date));
-    return List.unmodifiable(copy);
+    return _events;
   }
 
   @override
   String getResumeLocation() {
-    return "/assets/static/Lam_Gia_Thuan_CV_4_0.pdf";
+    return "static/Lam_Gia_Thuan_CV_4_0.pdf";
+  }
+
+  @override
+  String getMoonIconLocation() {
+    return "static/moon_icon.png";
+  }
+
+  @override
+  String getSunIconLocation() {
+    return "static/sun_icon.png";
   }
 }
 
@@ -91,12 +110,6 @@ final events = [
     story: null,
   ),
   Event(
-    date: DateTime(2020, 2, 9),
-    summary:
-        "I thought of a personal website and tried my hands on React + Bulma.",
-    story: null,
-  ),
-  Event(
     date: DateTime(2020, 2, 18),
     summary: "I went for Google Onsite. Incredible Googlers!",
     story: null,
@@ -132,12 +145,6 @@ final events = [
   Event(
     date: DateTime(2020, 5, 16),
     summary:
-        "I finally figured out the idea behind my personal website: A Philosophy Blog of Universal Facts!",
-    story: null,
-  ),
-  Event(
-    date: DateTime(2020, 5, 16),
-    summary:
         "I ranked 1796 at CodeJam 2020. Still faraway from what I desire, but still a solid 10% improvement!",
     story: null,
   ),
@@ -157,12 +164,6 @@ final events = [
     date: DateTime(2020, 6, 4),
     summary:
         "Today, for the first time, I checked out what beneath the JVM: absolute beauty.",
-    story: null,
-  ),
-  Event(
-    date: DateTime(2020, 6, 5),
-    summary:
-        "Fun experiment! A little bird told me my English was too broken. Today, I recorded myself singing in English and Vietnamese and surprisingly, both are equally broken to the point that I can feel the struggle in pronouncing every word.",
     story: null,
   ),
   Event(

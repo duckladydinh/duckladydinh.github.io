@@ -13,6 +13,10 @@ abstract class DataProvider {
   List<Event> getEvents();
 
   String getResumeLocation();
+
+  String getMoonIconLocation();
+
+  String getSunIconLocation();
 }
 
 class ThemeModeProvider with ChangeNotifier {

@@ -23,9 +23,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+# open resume link
   url_launcher:
+# display quotes
   carousel_slider:
+# state management
   provider:
+# date format
   intl:
 
 dev_dependencies:
@@ -37,6 +41,8 @@ flutter:
 
   assets:
     - static/Lam_Gia_Thuan_CV_4_0.pdf
+    - static/moon_icon.png
+    - static/sun_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
