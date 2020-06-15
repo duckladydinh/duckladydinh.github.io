@@ -5,10 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+  final now = DateTime.now();
+
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(
-        create: (context) => ThemeModeProvider(ThemeMode.dark),
+        create: (context) => ThemeModeProvider((now.hour >= 6 && now.hour < 18)
+            ? ThemeMode.light
+            : ThemeMode.dark),
       ),
       Provider(
         create: (context) {
