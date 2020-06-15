@@ -2,7 +2,7 @@ import 'package:duckladydinh/api/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class AppBarTitle extends StatefulWidget {
+class AppBarTitle extends StatelessWidget {
   final String authorNightTitle;
   final String authorDayTitle;
   final String author;
@@ -10,40 +10,32 @@ class AppBarTitle extends StatefulWidget {
   AppBarTitle({this.author, this.authorDayTitle, this.authorNightTitle});
 
   @override
-  _AppBarTitleState createState() {
-    return _AppBarTitleState();
-  }
-}
-
-class _AppBarTitleState extends State<AppBarTitle> {
-  bool isLightMode = false;
-
-  @override
   Widget build(BuildContext context) {
     final themeModeProvider = Provider.of<ThemeModeProvider>(context);
+    final lightMode = themeModeProvider.getTheme() == ThemeMode.light;
+
     final appDataProvider = Provider.of<DataProvider>(context);
+    final moonImage = AssetImage(appDataProvider.getMoonIconLocation());
+    final sunImage = AssetImage(appDataProvider.getSunIconLocation());
 
     return Row(
       children: [
         Text(
-          widget.author,
+          author,
           style:
               Theme.of(context).textTheme.headline5.apply(color: Colors.white),
         ),
         Switch(
-          value: isLightMode,
-          inactiveThumbImage: AssetImage(appDataProvider.getMoonIconLocation()),
-          activeThumbImage: AssetImage(appDataProvider.getSunIconLocation()),
-          onChanged: (value) {
-            setState(() {
-              isLightMode = value;
-            });
+          value: lightMode,
+          inactiveThumbImage: moonImage,
+          activeThumbImage: sunImage,
+          onChanged: (_) {
             themeModeProvider
-                .setTheme(isLightMode ? ThemeMode.light : ThemeMode.dark);
+                .setTheme(lightMode ? ThemeMode.dark : ThemeMode.light);
           },
         ),
         Text(
-          isLightMode ? widget.authorDayTitle : widget.authorNightTitle,
+          lightMode ? authorDayTitle : authorNightTitle,
           style:
               Theme.of(context).textTheme.subtitle1.apply(color: Colors.white),
         ),
