@@ -25406,7 +25406,7 @@ Y.JW.prototype={
 $0:function(){var t=0,s=P.ag(u.P)
 var $async$$0=P.ab(function(a,b){if(a===1)return P.ad(b,s)
 while(true)switch(t){case 0:t=2
-return P.av(T.Vb("static/Lam_Gia_Thuan_CV_4_0.pdf"),$async$$0)
+return P.av(T.Vb("/assets/static/Lam_Gia_Thuan_CV_4_0.pdf"),$async$$0)
 case 2:return P.ae(null,s)}})
 return P.af($async$$0,s)},
 $C:"$0",
