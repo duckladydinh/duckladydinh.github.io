@@ -40,7 +40,7 @@ class ManualDataProvider extends DataProvider {
 
   @override
   String getResumeLocation() {
-    return "static/Lam_Gia_Thuan_CV_4_0.pdf";
+    return "/assets/static/Lam_Gia_Thuan_CV_4_0.pdf";
   }
 
   @override
