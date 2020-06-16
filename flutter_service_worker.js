@@ -3,11 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "4f383d2d6a0382b1876581930d6516b4",
+  "main.dart.js": "3376bd4549c2d991d8c41d8b9fc60271",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/AssetManifest.json": "85aebb004f2c7584bdf4ba08934b82c1",
+"assets/AssetManifest.json": "9ba942eb1f90fcb33d98512688143916",
 "assets/NOTICES": "f16a6845c8a6e37aa6ad34cd9180d243",
+"assets/static/wallpapers/night_wallpaper.gif": "57b238f5f3d45e9b1c39049f2d17f4df",
+"assets/static/wallpapers/light_wallpaper.gif": "aaacfca43f744aa13c98fef2094e1d87",
 "assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "494dd22794f23bcfa205c44258b67a64",
 "assets/static/icons/scholar_icon.png": "e75a1a40a25ca9116e98bf93e4850ada",
 "assets/static/icons/linkedin_icon.png": "db4a8db59e9b4a12fac3a998dfbf469b",
