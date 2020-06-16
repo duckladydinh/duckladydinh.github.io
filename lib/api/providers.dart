@@ -14,9 +14,11 @@ abstract class DataProvider {
 
   String getResumeLocation();
 
-  String getMoonIconLocation();
+  ImageProvider getMoonIcon();
 
-  String getSunIconLocation();
+  ImageProvider getSunIcon();
+
+  List<PageReference> getExternalPageReferences();
 }
 
 class ThemeModeProvider with ChangeNotifier {

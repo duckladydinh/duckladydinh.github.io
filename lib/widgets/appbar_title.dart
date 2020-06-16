@@ -11,12 +11,10 @@ class AppBarTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final appDataProvider = Provider.of<DataProvider>(context);
+
     final themeModeProvider = Provider.of<ThemeModeProvider>(context);
     final lightMode = themeModeProvider.getTheme() == ThemeMode.light;
-
-    final appDataProvider = Provider.of<DataProvider>(context);
-    final moonImage = AssetImage(appDataProvider.getMoonIconLocation());
-    final sunImage = AssetImage(appDataProvider.getSunIconLocation());
 
     return Row(
       children: [
@@ -27,8 +25,8 @@ class AppBarTitle extends StatelessWidget {
         ),
         Switch(
           value: lightMode,
-          inactiveThumbImage: moonImage,
-          activeThumbImage: sunImage,
+          inactiveThumbImage: appDataProvider.getMoonIcon(),
+          activeThumbImage: appDataProvider.getSunIcon(),
           onChanged: (_) {
             themeModeProvider
                 .setTheme(lightMode ? ThemeMode.dark : ThemeMode.light);

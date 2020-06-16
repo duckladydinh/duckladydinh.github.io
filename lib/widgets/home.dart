@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:duckladydinh/api/providers.dart';
 import 'package:duckladydinh/widgets/appbar_title.dart';
 import 'package:duckladydinh/widgets/event_board.dart';
@@ -28,7 +30,35 @@ class Home extends StatelessWidget {
             onPressed: () async {
               await launch(appDataProvider.getResumeLocation());
             },
-          )
+          ),
+          PopupMenuButton(
+              icon: Icon(Icons.web),
+              tooltip: "External",
+              onSelected: (link) async {
+                await launch(link);
+              },
+              offset: Offset.fromDirection(pi / 2, 64.0),
+              itemBuilder: (_) => appDataProvider
+                  .getExternalPageReferences()
+                  .map((page) => PopupMenuItem(
+                        value: page.link,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image(
+                              width: 32.0,
+                              image: page.icon,
+                            ),
+                            const VerticalDivider(
+                              thickness: 1.0,
+                            ),
+                            Text(page.name)
+                          ],
+                        ),
+                      ))
+                  .toList()),
         ],
       ),
       body: SingleChildScrollView(

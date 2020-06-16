@@ -1,9 +1,13 @@
 import 'package:duckladydinh/api/models.dart';
 import 'package:duckladydinh/api/providers.dart';
+import 'package:flutter/material.dart';
 
 class ManualDataProvider extends DataProvider {
   List<Idiom> _idioms;
   List<Event> _events;
+  List<PageReference> _pageReferences;
+  ImageProvider _moonImage;
+  ImageProvider _sunImage;
 
   ManualDataProvider() {
     _idioms = List.unmodifiable(idioms);
@@ -11,6 +15,11 @@ class ManualDataProvider extends DataProvider {
     _events = List.from(events);
     _events.sort((a, b) => b.date.compareTo(a.date));
     _events = List.unmodifiable(_events);
+
+    _pageReferences = List.unmodifiable(pageReferences);
+
+    _moonImage = AssetImage("static/icons/moon_icon.png");
+    _sunImage = AssetImage("static/icons/sun_icon.png");
   }
 
   @override
@@ -44,13 +53,18 @@ class ManualDataProvider extends DataProvider {
   }
 
   @override
-  String getMoonIconLocation() {
-    return "static/moon_icon.png";
+  ImageProvider getMoonIcon() {
+    return _moonImage;
   }
 
   @override
-  String getSunIconLocation() {
-    return "static/sun_icon.png";
+  ImageProvider getSunIcon() {
+    return _sunImage;
+  }
+
+  @override
+  List<PageReference> getExternalPageReferences() {
+    return _pageReferences;
   }
 }
 
@@ -170,5 +184,23 @@ final events = [
     date: DateTime(2020, 6, 5),
     summary: "Light in the cloudy sky! =)) GooGooGooGoo...Google!",
     story: null,
+  ),
+];
+
+final pageReferences = [
+  PageReference(
+    name: "GitHub",
+    link: "https://github.com/duckladydinh",
+    icon: AssetImage("static/icons/github_icon.png"),
+  ),
+  PageReference(
+    name: "Scholar",
+    link: "https://scholar.google.com/citations?user=TbQgL_QAAAAJ",
+    icon: AssetImage("static/icons/scholar_icon.png"),
+  ),
+  PageReference(
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/gia-thuan-lam-929868161",
+    icon: AssetImage("static/icons/linkedin_icon.png"),
   ),
 ];

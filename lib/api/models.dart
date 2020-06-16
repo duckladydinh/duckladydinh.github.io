@@ -16,3 +16,12 @@ class Event {
 
   Event({this.date, this.summary, this.story}) : key = UniqueKey();
 }
+
+class PageReference {
+  final Key key;
+  final String name;
+  final String link;
+  final ImageProvider icon;
+
+  PageReference({this.name, this.link, this.icon}) : key = UniqueKey();
+}
