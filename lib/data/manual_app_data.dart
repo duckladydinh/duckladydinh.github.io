@@ -8,6 +8,8 @@ class ManualDataProvider extends DataProvider {
   List<PageReference> _pageReferences;
   ImageProvider _moonImage;
   ImageProvider _sunImage;
+  ImageProvider _nightWallpaper;
+  ImageProvider _dayWallpaper;
 
   ManualDataProvider() {
     _idioms = List.unmodifiable(idioms);
@@ -20,6 +22,9 @@ class ManualDataProvider extends DataProvider {
 
     _moonImage = AssetImage("static/icons/moon_icon.png");
     _sunImage = AssetImage("static/icons/sun_icon.png");
+
+    _nightWallpaper = AssetImage("static/wallpapers/night_wallpaper.gif");
+    _dayWallpaper = AssetImage("static/wallpapers/light_wallpaper.gif");
   }
 
   @override
@@ -65,6 +70,16 @@ class ManualDataProvider extends DataProvider {
   @override
   List<PageReference> getExternalPageReferences() {
     return _pageReferences;
+  }
+
+  @override
+  ImageProvider getDayWallpaper() {
+    return _dayWallpaper;
+  }
+
+  @override
+  ImageProvider getNightWallpaper() {
+    return _nightWallpaper;
   }
 }
 

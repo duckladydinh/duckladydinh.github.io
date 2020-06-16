@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:duckladydinh/api/providers.dart';
 import 'package:duckladydinh/widgets/appbar_title.dart';
@@ -10,6 +11,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
+    final themeModeProvider = Provider.of<ThemeModeProvider>(context);
+    final lightMode = themeModeProvider.getTheme() == ThemeMode.light;
     final appDataProvider = Provider.of<DataProvider>(context);
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
@@ -64,10 +67,23 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            IdiomBoard(
-              idioms: idioms,
-              maxWidth: screenWidth,
-              maxHeight: screenHeight * 0.8,
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: lightMode
+                      ? appDataProvider.getDayWallpaper()
+                      : appDataProvider.getNightWallpaper(),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                child: IdiomBoard(
+                  idioms: idioms,
+                  maxWidth: screenWidth,
+                  maxHeight: screenHeight * 0.8,
+                ),
+              ),
             ),
             EventBoard(
               events: events,

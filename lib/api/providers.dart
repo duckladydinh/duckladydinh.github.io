@@ -19,6 +19,10 @@ abstract class DataProvider {
   ImageProvider getSunIcon();
 
   List<PageReference> getExternalPageReferences();
+
+  ImageProvider getNightWallpaper();
+
+  ImageProvider getDayWallpaper();
 }
 
 class ThemeModeProvider with ChangeNotifier {
