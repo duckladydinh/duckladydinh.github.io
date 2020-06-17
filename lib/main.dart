@@ -32,7 +32,11 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Thuan\'s Home',
       theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.orange,
+        canvasColor: Colors.black,
+      ),
       themeMode: themeModeProvider.getTheme(),
       debugShowCheckedModeBanner: false,
       home: Home(),

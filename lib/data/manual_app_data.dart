@@ -8,8 +8,8 @@ class ManualDataProvider extends DataProvider {
   List<PageReference> _pageReferences;
   ImageProvider _moonImage;
   ImageProvider _sunImage;
-  ImageProvider _nightWallpaper;
-  ImageProvider _dayWallpaper;
+  BoxDecoration _nightWallpaper;
+  BoxDecoration _dayWallpaper;
 
   ManualDataProvider() {
     _idioms = List.unmodifiable(idioms);
@@ -23,8 +23,18 @@ class ManualDataProvider extends DataProvider {
     _moonImage = AssetImage("static/icons/moon_icon.png");
     _sunImage = AssetImage("static/icons/sun_icon.png");
 
-    _nightWallpaper = AssetImage("static/wallpapers/night_wallpaper.gif");
-    _dayWallpaper = AssetImage("static/wallpapers/light_wallpaper.gif");
+    _nightWallpaper = BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("static/wallpapers/night_wallpaper.gif"),
+        fit: BoxFit.cover,
+      ),
+    );
+    _dayWallpaper = BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("static/wallpapers/light_wallpaper.gif"),
+        fit: BoxFit.cover,
+      ),
+    );
   }
 
   @override
@@ -73,12 +83,12 @@ class ManualDataProvider extends DataProvider {
   }
 
   @override
-  ImageProvider getDayWallpaper() {
+  BoxDecoration getDayWallpaper() {
     return _dayWallpaper;
   }
 
   @override
-  ImageProvider getNightWallpaper() {
+  BoxDecoration getNightWallpaper() {
     return _nightWallpaper;
   }
 }

@@ -12,8 +12,10 @@ import 'package:url_launcher/url_launcher.dart';
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeModeProvider = Provider.of<ThemeModeProvider>(context);
-    final lightMode = themeModeProvider.getTheme() == ThemeMode.light;
     final appDataProvider = Provider.of<DataProvider>(context);
+    final wallpaper = (themeModeProvider.getTheme() == ThemeMode.light)
+        ? appDataProvider.getDayWallpaper()
+        : appDataProvider.getNightWallpaper();
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
     final events = appDataProvider.getEvents();
@@ -68,14 +70,7 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: lightMode
-                      ? appDataProvider.getDayWallpaper()
-                      : appDataProvider.getNightWallpaper(),
-                  fit: BoxFit.cover,
-                ),
-              ),
+              decoration: wallpaper,
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
                 child: IdiomBoard(

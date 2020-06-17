@@ -20,9 +20,9 @@ abstract class DataProvider {
 
   List<PageReference> getExternalPageReferences();
 
-  ImageProvider getNightWallpaper();
+  BoxDecoration getNightWallpaper();
 
-  ImageProvider getDayWallpaper();
+  BoxDecoration getDayWallpaper();
 }
 
 class ThemeModeProvider with ChangeNotifier {
