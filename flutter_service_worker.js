@@ -3,13 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "8a4e000e9d937fa7f1c95d6e3a2c6011",
+  "main.dart.js": "0de5232605ec6f43d2d9d7db57759ed4",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/AssetManifest.json": "9ba942eb1f90fcb33d98512688143916",
 "assets/NOTICES": "f16a6845c8a6e37aa6ad34cd9180d243",
-"assets/static/wallpapers/night_wallpaper.gif": "d8cbde2743ebcbc1d8f7de3bee439c08",
-"assets/static/wallpapers/light_wallpaper.gif": "d01f42fd5f2d8e3c00ae642a728ae1d9",
+"assets/static/wallpapers/night_wallpaper.gif": "bc5b66b8253b9bd7fcf2f36e2c448f9d",
+"assets/static/wallpapers/light_wallpaper.gif": "a1fad9b166ac604197df12603348c936",
 "assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "494dd22794f23bcfa205c44258b67a64",
 "assets/static/icons/scholar_icon.png": "e75a1a40a25ca9116e98bf93e4850ada",
 "assets/static/icons/linkedin_icon.png": "db4a8db59e9b4a12fac3a998dfbf469b",
