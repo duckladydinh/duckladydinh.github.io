@@ -225,7 +225,7 @@ final pageReferences = [
   ),
   PageReference(
     name: "LinkedIn",
-    link: "https://de.linkedin.com/in/gia-thuan-lam-929868161",
+    link: "https://www.linkedin.com/in/gia-thuan-lam-929868161",
     icon: AssetImage("static/icons/linkedin_icon.png"),
   ),
 ];
