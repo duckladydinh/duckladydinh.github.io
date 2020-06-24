@@ -10,7 +10,7 @@ const RESOURCES = {
 "assets/NOTICES": "f16a6845c8a6e37aa6ad34cd9180d243",
 "assets/static/wallpapers/night_wallpaper.gif": "bc5b66b8253b9bd7fcf2f36e2c448f9d",
 "assets/static/wallpapers/light_wallpaper.gif": "d01f42fd5f2d8e3c00ae642a728ae1d9",
-"assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "5750186ec23e660bb45824107a8e20c0",
+"assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "91a8ddba9cf30979cab51b7016ee0b2a",
 "assets/static/icons/scholar_icon.png": "e75a1a40a25ca9116e98bf93e4850ada",
 "assets/static/icons/linkedin_icon.png": "db4a8db59e9b4a12fac3a998dfbf469b",
 "assets/static/icons/sun_icon.png": "72eee53ce8b893ef57a4ca34a8c1e5e8",
