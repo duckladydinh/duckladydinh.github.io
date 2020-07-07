@@ -3,16 +3,17 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "0de5232605ec6f43d2d9d7db57759ed4",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
+  "main.dart.js": "dfd85fa01b5ab46886bbde0a99618065",
+"favicon.png": "dcd43f6d03b5bc567047d0946f9054eb",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/AssetManifest.json": "9ba942eb1f90fcb33d98512688143916",
+"assets/AssetManifest.json": "5c69b03c56965252ed70a43e90cedb94",
 "assets/NOTICES": "f16a6845c8a6e37aa6ad34cd9180d243",
 "assets/static/wallpapers/night_wallpaper.gif": "bc5b66b8253b9bd7fcf2f36e2c448f9d",
 "assets/static/wallpapers/light_wallpaper.gif": "d01f42fd5f2d8e3c00ae642a728ae1d9",
 "assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "91a8ddba9cf30979cab51b7016ee0b2a",
-"assets/static/icons/scholar_icon.png": "e75a1a40a25ca9116e98bf93e4850ada",
-"assets/static/icons/linkedin_icon.png": "db4a8db59e9b4a12fac3a998dfbf469b",
+"assets/static/icons/scholar_icon.png": "117cead6fea4d76f20eb7711b10a83ab",
+"assets/static/icons/scholar_icon.png~": "443e638c0cdfd87069dcb079676092c1",
+"assets/static/icons/resume_icon.png": "526ac2fae374f2a2c368c09cf42a5c18",
 "assets/static/icons/sun_icon.png": "72eee53ce8b893ef57a4ca34a8c1e5e8",
 "assets/static/icons/moon_icon.png": "ed8c4b72eea65421b15e7b53b3b13456",
 "assets/static/icons/github_icon.png": "c96d65bce0240f2a0f6b2b0de32b73c8",
@@ -20,8 +21,11 @@ const RESOURCES = {
 "index.html": "8b483ba217ee49b79f3834bc3b2739d6",
 "/": "8b483ba217ee49b79f3834bc3b2739d6",
 "manifest.json": "1cac2a606521f8398d4b6f0d6028d010",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1"
+"favicon.png~": "5dcef449791fa27946b3d35ad8803796",
+"icons/Icon-512.png": "7e9da04b390271334607f106b3b61728",
+"icons/Icon-192.png~": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-512.png~": "96e752610906ba2a93c65f8abe1645f1",
+"icons/Icon-192.png": "dcd43f6d03b5bc567047d0946f9054eb"
 };
 
 // The application shell files that are downloaded before a service worker can
