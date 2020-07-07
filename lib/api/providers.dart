@@ -12,8 +12,6 @@ abstract class DataProvider {
 
   List<Event> getEvents();
 
-  String getResumeLocation();
-
   ImageProvider getMoonIcon();
 
   ImageProvider getSunIcon();

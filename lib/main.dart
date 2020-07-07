@@ -4,6 +4,8 @@ import 'package:duckladydinh/widgets/home.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+const DARK_COLOR = Color.fromARGB(255, 32, 33, 36);
+
 void main() {
   final now = DateTime.now();
 
@@ -32,7 +34,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Thuan\'s Home',
       theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: DARK_COLOR,
+        canvasColor: DARK_COLOR,
+        cardColor: DARK_COLOR,
+      ),
       themeMode: themeModeProvider.getTheme(),
       debugShowCheckedModeBanner: false,
       home: Home(),

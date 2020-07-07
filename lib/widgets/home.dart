@@ -29,16 +29,9 @@ class Home extends StatelessWidget {
           authorNightTitle: appDataProvider.getAuthorNightTitle(),
         ),
         actions: [
-          IconButton(
-            icon: Icon(Icons.account_circle),
-            tooltip: "Resume",
-            onPressed: () async {
-              await launch(appDataProvider.getResumeLocation());
-            },
-          ),
           PopupMenuButton(
-              icon: Icon(Icons.web),
-              tooltip: "External",
+              icon: Icon(Icons.account_circle),
+              tooltip: "About me",
               onSelected: (link) async {
                 await launch(link);
               },

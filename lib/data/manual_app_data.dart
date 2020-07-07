@@ -63,11 +63,6 @@ class ManualDataProvider extends DataProvider {
   }
 
   @override
-  String getResumeLocation() {
-    return "/assets/static/Lam_Gia_Thuan_CV_4_0.pdf";
-  }
-
-  @override
   ImageProvider getMoonIcon() {
     return _moonImage;
   }
@@ -214,6 +209,11 @@ final events = [
 
 final pageReferences = [
   PageReference(
+    name: "Resume",
+    link: "/assets/static/Lam_Gia_Thuan_CV_4_0.pdf",
+    icon: AssetImage("static/icons/resume_icon.png"),
+  ),
+  PageReference(
     name: "GitHub",
     link: "https://github.com/duckladydinh",
     icon: AssetImage("static/icons/github_icon.png"),
@@ -222,10 +222,5 @@ final pageReferences = [
     name: "Scholar",
     link: "https://scholar.google.com/citations?user=TbQgL_QAAAAJ",
     icon: AssetImage("static/icons/scholar_icon.png"),
-  ),
-  PageReference(
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/gia-thuan-lam-929868161",
-    icon: AssetImage("static/icons/linkedin_icon.png"),
   ),
 ];
