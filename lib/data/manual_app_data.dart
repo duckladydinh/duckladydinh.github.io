@@ -111,13 +111,16 @@ final idioms = [
   Idiom(
     author: "Whis, The Angel",
     quote:
-        "Ghost or not, there's nothing that Beerus sama can't destroy... oh, except for the absolute divine beauty of Thuan, of course",
+        "Ghost or not, there's nothing that Beerus-sama can't destroy... oh, except for the absolute divine beauty of Thuan, of course",
   ),
   Idiom(
     author: "The Book",
     quote:
         "If it's possible for others, it's possible for me. It is only a question of strategies!",
   ),
+  Idiom(
+      author: "Thuan, The Heaven Chaser",
+      quote: "Every way to heaven goes through hell"),
 ];
 
 final events = [
@@ -203,6 +206,12 @@ final events = [
   Event(
     date: DateTime(2020, 6, 5),
     summary: "Light in the cloudy sky! =)) GooGooGooGoo...Google!",
+    story: null,
+  ),
+  Event(
+    date: DateTime(2020, 7, 16),
+    summary:
+        "I finally made the move that has no way back. I know of the consequences, but I won't back off. I won't accept an ordinary life! Tears in eyes, worries in the mind, life in the fire... shine or die!",
     story: null,
   ),
 ];
