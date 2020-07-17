@@ -136,6 +136,12 @@ final events = [
     story: null,
   ),
   Event(
+    date: DateTime(2018, 3, 1),
+    summary:
+        "Started my first job with a real company: 360T. Met amazing people, all of whom were smarter than me. Seriously =)) !",
+    story: null,
+  ),
+  Event(
     date: DateTime(2019, 4, 17),
     summary:
         "For the first time in many years, I finally made my way through Code Jam Round 1! (Rank 902 Round 1A)",
