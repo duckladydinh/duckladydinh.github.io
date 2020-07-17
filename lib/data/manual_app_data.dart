@@ -111,7 +111,7 @@ final idioms = [
   Idiom(
     author: "Whis, The Angel",
     quote:
-        "Ghost or not, there's nothing that Beerus-sama can't destroy... oh, except for the absolute divine beauty of Thuan, of course",
+        "Ghost or not, there's nothing in the Universe Beerus-sama can't destroy... oh, except for the absolute divine beauty of Thuan, of course",
   ),
   Idiom(
     author: "The Book",
