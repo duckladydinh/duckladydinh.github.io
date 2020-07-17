@@ -6,6 +6,7 @@ class ManualDataProvider extends DataProvider {
   List<Idiom> _idioms;
   List<Event> _events;
   List<PageReference> _pageReferences;
+  Image _profileImage;
   ImageProvider _moonImage;
   ImageProvider _sunImage;
   BoxDecoration _nightWallpaper;
@@ -20,6 +21,7 @@ class ManualDataProvider extends DataProvider {
 
     _pageReferences = List.unmodifiable(pageReferences);
 
+    _profileImage = Image.asset("static/icons/pika_icon.png");
     _moonImage = AssetImage("static/icons/moon_icon.png");
     _sunImage = AssetImage("static/icons/sun_icon.png");
 
@@ -60,6 +62,11 @@ class ManualDataProvider extends DataProvider {
   @override
   List<Event> getEvents() {
     return _events;
+  }
+
+  @override
+  Image getProfileIcon() {
+    return _profileImage;
   }
 
   @override

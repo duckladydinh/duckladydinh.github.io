@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
         ),
         actions: [
           PopupMenuButton(
-              icon: Icon(Icons.account_circle),
+              icon: appDataProvider.getProfileIcon(),
               tooltip: "About me",
               onSelected: (link) async {
                 await launch(link);

@@ -12,6 +12,8 @@ abstract class DataProvider {
 
   List<Event> getEvents();
 
+  Image getProfileIcon();
+
   ImageProvider getMoonIcon();
 
   ImageProvider getSunIcon();
