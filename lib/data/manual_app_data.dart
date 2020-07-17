@@ -163,18 +163,6 @@ final events = [
     story: null,
   ),
   Event(
-    date: DateTime(2020, 4, 3),
-    summary:
-        "Google HC decided to give me a chance. I felt explosive! But the Corona is getting in my way =((.",
-    story: null,
-  ),
-  Event(
-    date: DateTime(2020, 4, 24),
-    summary:
-        "I learned of the situation of Google and Corona. Worry, I do, but still with hope!",
-    story: null,
-  ),
-  Event(
     date: DateTime(2020, 4, 26),
     summary:
         "I learned the basics of Go, Flutter and gRPC. They are awesome together.",
