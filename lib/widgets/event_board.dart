@@ -27,29 +27,40 @@ class EventBoard extends StatelessWidget {
   Widget build(BuildContext context) {
     final cols = min(maxCols, max(1, (boardWidth / cellWidth).floor()));
     final eventMap = groupedEventsByYear(events);
+    final eventMapEntries = eventMap.entries.toList();
     final aspectRatio = getAspectRatio(cols);
     final colSpace = (cols > 1 ? columnSpace : 0);
     final totalWidth = colSpace * (cols - 1) + cellWidth * cols;
 
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: max(0, (boardWidth - totalWidth) / 2.0)),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: eventMap.entries
-            .expand((e) => [
-                  AnnotatedDivider(e.key.toString()),
-                  GridView.count(
-                    childAspectRatio: aspectRatio,
-                    crossAxisSpacing: colSpace,
-                    mainAxisSpacing: colSpace,
-                    physics: ScrollPhysics(),
-                    crossAxisCount: cols,
-                    shrinkWrap: true,
-                    children: [for (var event in e.value) EventCard(event)],
-                  ),
-                ])
-            .toList(),
+        horizontal: max(0, (boardWidth - totalWidth) / 2.0),
+      ),
+      child: ListView.builder(
+        shrinkWrap: true,
+        primary: false,
+        itemCount: eventMapEntries.length * 2,
+        itemBuilder: (_, index) {
+          final e = eventMapEntries[index ~/ 2];
+          if (index % 2 == 0) {
+            return AnnotatedDivider(e.key.toString());
+          } else {
+            return GridView.builder(
+              shrinkWrap: true,
+              primary: false,
+              itemCount: e.value.length,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                childAspectRatio: aspectRatio,
+                crossAxisSpacing: colSpace,
+                mainAxisSpacing: colSpace,
+                crossAxisCount: cols,
+              ),
+              itemBuilder: (_, index) {
+                return EventCard(e.value[index]);
+              },
+            );
+          }
+        },
       ),
     );
   }
