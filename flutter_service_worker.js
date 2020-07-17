@@ -3,29 +3,30 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "d2cb41005f39138ee3ce5b4fe9f55870",
-"favicon.png": "dcd43f6d03b5bc567047d0946f9054eb",
+  "main.dart.js": "dbc3f3437200544177eb94736223a856",
+"favicon.png": "1ef5cb437ac460a2f7770590ec969a90",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/AssetManifest.json": "5c69b03c56965252ed70a43e90cedb94",
+"assets/AssetManifest.json": "5f2ca88abbbde42c3237909cdd897137",
 "assets/NOTICES": "f16a6845c8a6e37aa6ad34cd9180d243",
 "assets/static/wallpapers/night_wallpaper.gif": "bc5b66b8253b9bd7fcf2f36e2c448f9d",
 "assets/static/wallpapers/light_wallpaper.gif": "d01f42fd5f2d8e3c00ae642a728ae1d9",
 "assets/static/Lam_Gia_Thuan_CV_4_0.pdf": "91a8ddba9cf30979cab51b7016ee0b2a",
-"assets/static/icons/scholar_icon.png": "117cead6fea4d76f20eb7711b10a83ab",
+"assets/static/icons/scholar_icon.png": "68f2b177acc9f707a0d97103036a3f78",
 "assets/static/icons/scholar_icon.png~": "443e638c0cdfd87069dcb079676092c1",
 "assets/static/icons/resume_icon.png": "526ac2fae374f2a2c368c09cf42a5c18",
 "assets/static/icons/sun_icon.png": "72eee53ce8b893ef57a4ca34a8c1e5e8",
-"assets/static/icons/moon_icon.png": "ed8c4b72eea65421b15e7b53b3b13456",
+"assets/static/icons/moon_icon.png": "715f3af0fa7a3845b0195fbec95b4cc7",
+"assets/static/icons/pika_icon.png": "803a1935651b46e721dc2590ab5de14a",
 "assets/static/icons/github_icon.png": "c96d65bce0240f2a0f6b2b0de32b73c8",
 "assets/FontManifest.json": "580ff1a5d08679ded8fcf5c6848cece7",
 "index.html": "b2dfe582119c75ccb4cda9bd6de7e967",
 "/": "b2dfe582119c75ccb4cda9bd6de7e967",
 "manifest.json": "1cac2a606521f8398d4b6f0d6028d010",
 "favicon.png~": "5dcef449791fa27946b3d35ad8803796",
-"icons/Icon-512.png": "7e9da04b390271334607f106b3b61728",
+"icons/Icon-512.png": "1ef5cb437ac460a2f7770590ec969a90",
 "icons/Icon-192.png~": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png~": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-192.png": "dcd43f6d03b5bc567047d0946f9054eb"
+"icons/Icon-192.png": "1ef5cb437ac460a2f7770590ec969a90"
 };
 
 // The application shell files that are downloaded before a service worker can
