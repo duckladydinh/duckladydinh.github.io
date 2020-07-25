@@ -29,6 +29,13 @@ class Home extends StatelessWidget {
           authorNightTitle: appDataProvider.getAuthorNightTitle(),
         ),
         actions: [
+          IconButton(
+            icon: appDataProvider.getNewsIcon(),
+            tooltip: "Daily news",
+            onPressed: () {
+              Navigator.pushNamed(context, "/daily");
+            },
+          ),
           PopupMenuButton(
               icon: appDataProvider.getProfileIcon(),
               tooltip: "About me",

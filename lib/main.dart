@@ -1,5 +1,6 @@
 import 'package:duckladydinh/api/providers.dart';
 import 'package:duckladydinh/data/manual_app_data.dart';
+import 'package:duckladydinh/widgets/daily_news.dart';
 import 'package:duckladydinh/widgets/home.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -42,7 +43,11 @@ class App extends StatelessWidget {
       ),
       themeMode: themeModeProvider.getTheme(),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      initialRoute: "/",
+      routes: {
+        "/": (_) => Home(),
+        "/daily": (_) => DailyNews(),
+      },
     );
   }
 }
