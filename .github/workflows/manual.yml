@@ -28,3 +28,14 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
+    - name: Print WD
+      run: pwd
+    - name: List WD
+      run: ls
+    - name: List Home
+      run: ls ~
+    - name: List Mom
+      run: ls ../
+    - name: Who am I
+      run: whoami
+      
